@@ -36,5 +36,4 @@ import FoldText from "react-native-row-text";
     </tr>
 </table>
 
-
-![图片](https://github.com/17362663079/react-native-fold-text/demo.gif)
+![图片](https://github.com/17362663079/react-native-fold-text/blob/master/demo.gif)
