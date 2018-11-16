@@ -2,13 +2,13 @@
 在你的 React Native App 工程根目录下执行以下命令进行安装:
 
 ```
-npm install --save react-native-row-text
+npm install --save react-native-fold-text
 ```
 
 # Usage（使用）
 ```
 
-import FoldText from "react-native-row-text";
+import FoldText from "react-native-fold-text";
 
  <FoldText
 	text={intro}
