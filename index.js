@@ -1,15 +1,19 @@
 /**
- * Created by YASIN on 2017/8/21.
- * 字数超过自指定行数后显示更多
+ * Created by libin on 2018/11/11.
+ * 字数超过指定行数后 自动折叠
  */
 import React, { Component } from 'react';
 import {
     View,
     Text,
-    StyleSheet, TouchableOpacity,
+    Image,
+    StyleSheet,
+    TouchableOpacity,
 } from 'react-native';
 
-export default class index extends Component {
+const upIcon = require('./image/up.png');
+const downIcon = require('./image/dowm.png');
+export default class Index extends Component {
 
     static defaultProps = {
         maxLines : 5,
@@ -61,8 +65,10 @@ export default class index extends Component {
                     show ?
                         <TouchableOpacity
                             onPress={() => this._changeLines(maxLines)}
-                            style={{ alignItems : 'center', height : 40, justifyContent : 'center', backgroundColor : 'yellow' }}>
-                            <Icon name={maxLines ? 'oneIcon|icon_arrow_down' : 'oneIcon|icon_arrow_up'} size={FS.ICON_B} color={CS.THEME11}/>
+                            style={styles.btnBox}
+                        >
+
+                            <Image source={maxLines ? downIcon : upIcon} style={styles.image}/>
                         </TouchableOpacity>
                         : null
                 }
@@ -78,5 +84,14 @@ const styles = StyleSheet.create({
         lineHeight : 20,
         paddingHorizontal : 15,
         marginTop : 10,
+    },
+    btnBox : {
+        alignItems : 'center',
+        height : 40,
+        justifyContent : 'center',
+    },
+    image : {
+        width : 26,
+        height : 26,
     }
 });

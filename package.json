@@ -1,14 +1,23 @@
 {
-  "name": "row-text",
+  "name": "react-native-fold-text",
   "version": "1.0.0",
-  "description": "当文字长度超过限定行数时，出现折叠按钮",
+  "description": "多文本折叠（Multitext folding）",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/17362663079/react-native-fold-text.git"
+  },
   "keywords": [
-    "row-text"
+    "Multitext",
+    "fold-text"
   ],
   "author": "libinwendy",
-  "license": "ISC"
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/17362663079/react-native-fold-text/issues"
+  },
+  "homepage": "https://github.com/17362663079/react-native-fold-text#readme"
 }
