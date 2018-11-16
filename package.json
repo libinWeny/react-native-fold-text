@@ -1,0 +1,14 @@
+{
+  "name": "row-text",
+  "version": "1.0.0",
+  "description": "当文字长度超过限定行数时，出现折叠按钮",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "row-text"
+  ],
+  "author": "libinwendy",
+  "license": "ISC"
+}
